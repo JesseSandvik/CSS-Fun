@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #222327;
+  --bg-glass: #ffffff25;
+  --border-radius: 15px;
+}
+
+body {
+  align-items: center;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.twitter {
+  --clr: #1DA1F2;
+}
+
+.instagram {
+  --clr: #8a3ab9;
+}
+
+.facebook {
+  --clr: #4267B2;
+}
+
+ul {
+  border-radius: var(--border-radius);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2rem;
+}
+
+ul li {
+  border: 5px solid var(--clr);
+  border-radius: var(--border-radius);
+  position: relative;
+  list-style: none;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+ul li:hover {
+  z-index: 10000;
+  filter: drop-shadow(0 0 5px var(--clr))
+          drop-shadow(0 0 7.5px var(--bg))
+          drop-shadow(0 0 10px var(--clr));
+}
+
+ul li:hover::before {
+  border: 20px solid var(--clr);
+  inset: 0;
+}
+
+ul li:hover::after {
+  border-radius: 50%;
+  inset: 0;
+}
+
+ul li::before {
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  inset: 75px;
+  border: 7.5px solid var(--clr);
+  transition: 0.3s;
+}
+
+ul li::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--bg);
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+ul li a {
+  color: var(--clr);
+  position: relative;
+  text-decoration: none;
+  z-index: 10;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  padding: 1rem 1.75rem;
+}
+
+i {
+  padding: 0 1rem;
+}
