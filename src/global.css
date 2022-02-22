@@ -30,12 +30,12 @@ body {
   height: 400px;
   margin: 0 20px;
   border-radius: 20px;
-  background: linear-gradient(45deg, #b1ede8 25%,
-  #444 25%, #444 50%, #b1ede8 50%, #b1ede8 75%,
+  background: linear-gradient(45deg, #54defd 25%,
+  #444 25%, #444 50%, #54defd 50%, #54defd 75%,
   #444 75%, #444 100%);
   background-size: 40px 40px;
   filter: grayscale(1);
-  animation: animateBg 0.5s linear infinite;
+  animation: animateBg 2s linear infinite;
   animation-play-state: paused;
   transition: filter 1s;
   display: flex;
@@ -48,8 +48,8 @@ body {
 }
 
 .container .box:nth-child(2) {
-  background: linear-gradient(135deg, #b1ede8 25%,
-  #444 25%, #444 50%, #b1ede8 50%, #b1ede8 75%,
+  background: linear-gradient(135deg, #2afc98 25%,
+  #444 25%, #444 50%, #2afc98 50%, #2afc98 75%,
   #444 75%, #444 100%);
   background-size: 40px 40px;
 }
