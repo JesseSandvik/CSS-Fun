@@ -3,8 +3,11 @@ import './global.css';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <section>
+      <div className='box'>
+        <h3>Popular Creator Rank List</h3>
+      </div>
+    </section>
   );
 }
 
