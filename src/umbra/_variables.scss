@@ -1,0 +1,35 @@
+$primary-color: #2f2f2f;
+$secondary-color: #f2f2f2;
+$error-color: #d32752;
+$info-color: #f6c31c;
+
+$colors: (
+  'primary': $primary-color,
+  'secondary': $secondary-color,
+  'error': $error-color,
+  'info': $info-color,
+);
+
+.test-btn {
+  background-color: map-get($colors, 'info');
+}
+
+// @debug map-get($colors, 'primary');
+// @debug map-has-key($colors, 'main');
+// @debug map-has-key($colors, 'info');
+// @debug map-remove($colors, 'error');
+// @debug map-merge($colors, ('violet': violet));
+
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+$base-border-radius: 20px;
+$base-border-width: 1px;
+
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
